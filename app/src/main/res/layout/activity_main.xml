@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uhisa.zoomablescrollviewexample.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.uhisa.zoomablescrollview.ZoomableScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/verticalBackground"
+            app:gravity_center="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/example1"
+                    android:textColor="@color/verticalText"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/example2"
+                    android:textColor="@color/verticalText"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/example3"
+                    android:textColor="@color/verticalText"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/example4"
+                    android:textColor="@color/verticalText"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/example5"
+                    android:textColor="@color/verticalText"/>
+            </LinearLayout>
+        </com.uhisa.zoomablescrollview.ZoomableScrollView>
+
+        <com.uhisa.zoomablescrollview.ZoomableScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/horizontalBackground"
+            app:gravity_center="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/example1"
+                    android:textColor="@color/horizontalText"/>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/example2"
+                    android:textColor="@color/horizontalText"/>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/example3"
+                    android:textColor="@color/horizontalText"/>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/example4"
+                    android:textColor="@color/horizontalText"/>
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/example5"
+                    android:textColor="@color/horizontalText"/>
+            </LinearLayout>
+        </com.uhisa.zoomablescrollview.ZoomableScrollView>
+    </LinearLayout>
+</FrameLayout>
